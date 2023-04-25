@@ -59,18 +59,6 @@
     color: #ffffff;
 }
 
-.nav ul{
-    display: flex;
-    list-style: none;
-    width: 500px;
-    justify-content: space-around;
-}
-
-.nav ul a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
 
 .slide{
     margin-right: 10px;
@@ -114,7 +102,7 @@
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
 
 }
@@ -241,26 +229,74 @@
   }
 
 /*CONOCENOS*/
+
+.header-conocenos{
+    font-family: Arial;
+    padding: 100PX;
+    background-color: #edafb870;
+}
 .main-conocenos{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.contenedor1 {
+    display: flex;
     align-items: center;
 }
 
-/*UBICACION*/
-.ubicacion{
-    width: 800px;
-    height: 600px;
-    background-color: #edafb844;
-    padding: 20px;
-    margin: 30px;
+.contenedor1 img{
+    width: 450px;
+}
+.contenedor1 p{
+    font-family: Arial;
+    margin: 20px;
+
+}
+
+.contenedor2 {
+    font-family: Arial;
+    padding: 100PX;
+    width: 100%;
+    background-color: #edafb870;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end
+}
+
+.contenedor3 {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.contenedor3 li a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+.ubicacion{
+    width: 100%;
+    height: auto;
+    background-color: #edafb870;
+    padding: 20px;
+    display: flex;
 }
 
 .ubicacion iframe{
-    width: 100%;
+    width: 80%;
+}
+/*eshop*/
+
+
+
+@media (max-width: 768px) {
+    .ubicacion{
+        width: auto;
+        height: auto;
+    }
 }
 @media (max-width: 768px) {
     .p1 {
