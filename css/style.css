@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+@font-face {
+    font-family: "TrajanPro";
+    src: url('../Recursos/TrajanPro.otf');
+}
+
+@font-face {
+    font-family: "DJRbold";
+    src: url('../Recursos/DJRbold.ttf');
+}
+
+ @font-face {
+        font-family: "rubik";
+        src: url('../Recursos/Rubik.ttf');
+}
+
+@font-face {
+    font-family: "roboto-mono";
+    src: url('../Recursos/RobotoMono.ttf');
+}
+
+@font-face {
+    font-family: "Archivo-Bold" ;
+    src: url('../Recursos/Archivo-Bold.otf');
+}
+
+/*----HEADER....*/
+.header-index{
+    font-family: "TrajanPro";
+}
+
+.navbar{
+    background-color: #f8f8f8;
+}
+.ancho-mx{
+    max-width: 1800px;
+}
+
+.ancho-mx a img{
+    max-width: 120px;
+}
+
+.navbar-brand :hover{
+    transform: scale(1.05);
+}
+
+.navbar-collapse{
+    flex-direction: row;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+.nav-link:hover{
+    background-color: black;
+    color: #ffffff;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.nav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.slide{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.slide img{
+    height: 1150px;
+}
+
+.carousel-caption h3{
+    font-family: "TrajanPro";
+    background-color: rgba(0, 0, 0, 0.452);
+    backdrop-filter: blur(10px);
+    width: 450px;
+    padding: 10px;
+}
+
+
+/*Main*/
+.titulos{
+    display: flex;
+    font-family: "Archivo-Bold";
+
+}
+
+.parrafos{
+    font-family: "roboto-mono";
+}
+
+#main-index{
+    background-color: #ffffff;
+    font-family: "TrajanPro";
+    
+}
+
+.footer{
+    background-color: black;
+    min-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.footer li a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.icons{
+    width: 300px;
+}
+
+.Promocion a{
+    font-family: "Archivo-Bold";
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation-name: promocion;
+    animation-duration: 2.5s;
+    animation-iteration-count: 10;
+}
+
+@keyframes promocion{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.01);
+        color: rgba(255, 22, 22, 0.733);
+    }
+}
+.p1 {
+    font-size: 80px;
+}
+
+.p2 {
+    font-size: 40px;
+}
+
+.p3{
+    font-size: 40px;
+}
+/*d-block w-100*/
+
+/*MAIN CONTACTO*/
+
+.main-contacto h1{
+    background-color: #ffffff;
+    font-family: "Archivo-Bold";
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*Formulario*/
+.formulario {
+    width: 800px;
+    background: #f8f8f8;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+  }
+   
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+  }
+  
+  .formulario a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .formulario a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+
+  .botonderegistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botonderegistro input{
+    width: 30%;
+    background: #7e8766;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .botonderegistro input:hover{
+    transform: scale(1.05)
+  }
