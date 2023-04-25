@@ -13,16 +13,6 @@
     src: url('../Recursos/DJRbold.ttf');
 }
 
- @font-face {
-        font-family: "rubik";
-        src: url('../Recursos/Rubik.ttf');
-}
-
-@font-face {
-    font-family: "roboto-mono";
-    src: url('../Recursos/RobotoMono.ttf');
-}
-
 @font-face {
     font-family: "Archivo-Bold" ;
     src: url('../Recursos/Archivo-Bold.otf');
@@ -290,7 +280,59 @@
 }
 /*eshop*/
 
+.header-eshop {
+    background-color: #7e8766;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.navegador {
+    border-radius: 5px;
+}
+.barrabusqueda {
+    width: 800px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.boton {
+    background-color: #000;
+    margin: 10px;
+    width: 80px;
+    color: #f8f8f8;
+
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container1 img{
+    height: 430px;
+}
+
+
+.card-body p{
+    text-align: center;
+}
+
+.carrito {
+    width: 80%;
+    background: #7e8766;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center
+  }
 
 @media (max-width: 768px) {
     .ubicacion{
