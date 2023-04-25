@@ -92,8 +92,7 @@
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
 
 }
 
@@ -333,6 +332,78 @@
     display: flex;
     align-items: center
   }
+
+/*COLECCION*/
+.containergrilla {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Jeans1 Jeans2 Jeans3 Jeans4 Jeans5"; 
+  }
+  .Jeans1 { grid-area: Jeans1; }
+  .Jeans2 { grid-area: Jeans2; }
+  .Jeans3 { grid-area: Jeans3; }
+  .Jeans4 { grid-area: Jeans4; }
+  .Jeans5 { grid-area: Jeans5; }
+
+  .containergrilla img{
+    width: 100%;
+    height: 95%;
+  }
+
+.titulosgrilla {
+    margin: 20px;
+    text-align: center;
+}
+
+.containerbuzos {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Buzos1 Buzos2 Buzos3 Buzos4 Buzos5";
+  }
+  
+  .Buzos1 { grid-area: Buzos1; }
+  
+  .Buzos2 { grid-area: Buzos2; }
+  
+  .Buzos3 { grid-area: Buzos3; }
+  
+  .Buzos4 { grid-area: Buzos4; }
+  
+  .Buzos5 { grid-area: Buzos5; }
+  
+  .containerremeras {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Remeras1 Remeras2 Remeras3 Remeras4 Remeras5";
+  }
+  
+  .Remeras1 { grid-area: Remeras1; }
+  
+  .Remeras2 { grid-area: Remeras2; }
+  
+  .Remeras3 { grid-area: Remeras3; }
+  
+  .Remeras4 { grid-area: Remeras4; }
+  
+  .Remeras5 { grid-area: Remeras5; }
+
+/*ICONOS FOOTER*/
+
+
+.container-iconos svg{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
 
 @media (max-width: 768px) {
     .ubicacion{
