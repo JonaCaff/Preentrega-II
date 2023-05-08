@@ -59,8 +59,9 @@
     height: 1150px;
 }
 
-.carousel-caption h3{
+.carousel-caption h1{
     font-family: "TrajanPro";
+    font-size: 30px;
     background-color: rgba(0, 0, 0, 0.452);
     backdrop-filter: blur(10px);
     width: 450px;
@@ -75,9 +76,6 @@
 
 }
 
-.parrafos{
-    font-family: "roboto-mono";
-}
 
 #main-index{
     background-color: #ffffff;
@@ -136,6 +134,32 @@
     font-size: 40px;
 }
 
+.Suscripciones {
+    font-family: none;
+    background-color: #edafb870;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonsucribir {
+    background-color: #000;
+    padding: 8px;
+    width: 150px;
+    border-radius: 2px;
+}
+
+.botonsucribir a{
+    font-family: Arial;
+    text-decoration: none;
+    color: white;
+}
+
+.Suscripciones button:hover{
+    transform: scale(1.05);
+}
 /*d-block w-100*/
 
 /*MAIN CONTACTO*/
@@ -147,7 +171,6 @@
     margin: 10px;
     margin-bottom: 10px;
     text-align: center;
-    padding: 10px;
 }
 
 
@@ -220,7 +243,7 @@
 /*CONOCENOS*/
 
 .header-conocenos{
-    font-family: Arial;
+    font-family: "Arial";
     padding: 100PX;
     background-color: #edafb870;
 }
@@ -239,8 +262,7 @@
     width: 450px;
 }
 .contenedor1 p{
-    font-family: Arial;
-    margin: 20px;
+    padding: 50px;
 
 }
 
@@ -272,16 +294,27 @@
     background-color: #edafb870;
     padding: 20px;
     display: flex;
+    justify-content: center;
 }
 
 .ubicacion iframe{
     width: 80%;
 }
+
+.Preguntas {
+    font-family: Arial;
+    padding: 100PX;
+    width: 100%;
+}
+
+.accordion {
+    width: 100%;
+}
 /*eshop*/
 
-.header-eshop {
+.Header-eshop {
     background-color: #7e8766;
-    min-height: 40vh;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,10 +323,24 @@
 .navegador {
     border-radius: 5px;
 }
-.barrabusqueda {
-    width: 800px;
-    margin: 10px;
-    border-radius: 3px;
+.Barrabusqueda input{
+    width: 60vh;
+    padding: 2px;
+    border: solid 1px rgb(110, 110, 110);
+}
+
+.Botonbuscar{
+    padding: 2px;
+    width: 30px;
+}
+
+.Carritodecompra{
+    margin-left: 100px;
+}
+
+.Carritodecompra svg{
+    width: 25px;
+    height: 25px;
 }
 .boton {
     background-color: #000;
@@ -310,7 +357,7 @@
 }
 
 .container1 img{
-    height: 430px;
+    height: 100%;
 }
 
 
@@ -328,11 +375,35 @@
     font-size: 16px;
   }
 
+  .comprar button:hover{
+    transform: scale(1.03);
+    background-color: #000;
+    color: white;
+  }
   .card {
     display: flex;
     align-items: center
   }
 
+  .contenedor4 {
+    font-family: Arial;
+    height: 100px;  
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor4 h2{
+    align-content: center;
+}
+
+.contenedor4 svg{
+    color: white;
+}
 /*COLECCION*/
 .containergrilla {
     display: grid; 
@@ -354,10 +425,13 @@
   }
 
 .titulosgrilla {
+    font-family: "TrajanPro";
+    font-size: 20px;
+    color: black;
     margin: 20px;
     text-align: center;
+    text-decoration: none;
 }
-
 .containerbuzos {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -398,6 +472,65 @@
 
 /*ICONOS FOOTER*/
 
+/*gallerya index*/
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+	
+	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+			
+			.gallery__caption {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
+}
 
 .container-iconos svg{
     width: 30px;
@@ -405,13 +538,35 @@
     color: white;
 }
 
-@media (max-width: 768px) {
-    .ubicacion{
-        width: auto;
-        height: auto;
+.container-iconos {
+    width: 50px;
+    height: 35px;
+    color: black;
+}
+@media (max-width: 1248px) {
+    .card img{
+        padding: 10px;
     }
+    .slide img{
+        height: 800px;
+    }
+
 }
 @media (max-width: 768px) {
+    .card {
+        width: auto;
+    }
+    .ubicacion{
+        height: auto;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slide img{
+        height: 600px;
+    }
     .p1 {
         font-size: 60px;
     }
@@ -419,8 +574,22 @@
     .p2 {
         font-size: 30px;
     }
+    .Barrabusqueda input{
+        width: 30vh;
+    }
+    
+    .Carritodecompra {
+        margin-left: 11px;
+    }
 }
-
+@media (max-width: 628px) {
+    .ancho-mx a img{
+        max-width: 100px;
+    }
+    .formulario {
+        width: 400px;
+    }
+}
 @media (max-width: 500px) {
     .p1 {
         font-size: 40px;
@@ -429,14 +598,21 @@
     .p2 {
         font-size: 20px;
     }
+    .contenedor1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor1 img{
+        width: 100%;
+    }
+    
 }
 
-@media (max-width: 628px) {
-    .formulario {
-        width: 400px;
-    }
-}
 @media (max-width: 425px) {
+    .ancho-mx a img{
+        max-width: 80px;
+    }
     .formulario {
         width: auto;
     }
@@ -452,4 +628,41 @@
         font-size: 12px;
         min-height: 20vh;
     }
-}
+    .containergrilla{
+        display: block;
+        padding: 5px;
+    }
+    .slide img{
+        height: 250px;
+    }
+    .main-index{
+        min-height: 80vh;
+    }
+    .contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    .main-catalogo{
+        min-height: 80vh;
+    }
+    .titulosgrilla {
+        font-size: 14px;
+    }
+    .contenedor2{
+        padding: 50px;
+        align-items: center;
+    }
+    .contenedor2 h2{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .Main-eshop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Barrabusqueda input{
+        width: 20vh;
+    }
+    }

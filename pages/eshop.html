@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Nakama, compra, descuentos, promocion, envio, jeans, ropa, moda, temporada, estilo">
+    <meta name="description" content="Entra en Nakama online y compra ropa de calidad, a un precio accesible. Promociones, decuentos y muchos beneficios para que estar a la moda no sea pagar más">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../Recursos/NKFAVICON.png"> 
     <title>NAKAMA | E-SHOP</title>
 </head>
 <body>
@@ -35,46 +38,82 @@
           </div>
         </div>
       </nav>
-    <header class="header-eshop">
-        <nav class="navbar bg-body-tertiary">
-            <div class="navegador">
-              <form role="search">
-                <input class="barrabusqueda" type="search" placeholder="Busqueda" aria-label="Search">
-                <button class="boton" type="submit">Buscar</button>
-              </form>
-            </div>
-          </nav>
+    <header class="Header-eshop">
+      <div>
+        <form action="#" method="get" class="Barrabusqueda">
+          <input type="text"><button class="Botonbuscar" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                              </button>
+        </form>
+      </div>
+      <div class="Carritodecompra">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg>
+      </div>
     </header>
-    <main id="main-eshop">
+    <main class="Main-eshop" id="main-eshop">
         <section class="productos">
-            <div class="card container1" style="width: 18rem;">
-                <img src="../Recursos/Campera Jean negra_ (1).jpg" class="card-img-top" alt="Camperasvarioscolores">
+            <div class="card container1 comprar" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/dsmdexs7f/image/upload/v1683384053/Campera_3_afdgj3.jpg" class="card-img-top" alt="Camperasvarioscolores">
                 <div class="card-body">
                   <p class="card-text"> Campera de Jeans $12,900</p>
                 </div>
                 <button class="carrito">Agregar</button>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card comprar" style="width: 18rem;">
                 <img src="../Recursos/recto eragon pinza 44.jpg" class="card-img-top" alt="Jeansazulclasico">
                 <div class="card-body">
                   <p class="card-text">Pantalon corte clasico $6,499</p>
                 </div>
                 <button class="carrito">Agregar</button>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../Recursos/remera barbi.jpg" class="card-img-top" alt="RemeraBlancaCOWGIRL">
+            <div class="card comprar" style="width: 18rem;">
+                <img src="../Recursos/Remera3.jpg" class="card-img-top" alt="RemeraBlancaCOWGIRL">
                 <div class="card-body">
                   <p class="card-text">Remera Cowgirl $3,499</p>
                 </div>
                 <button class="carrito">Agregar</button>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card comprar" style="width: 18rem;">
                 <img src="https://images.unsplash.com/photo-1601396344868-31e008cd6e7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" class="card-img-top" alt="BuzosGAP">
                 <div class="card-body">
                   <p class="card-text">Buzos GAP $9,500</p>
                 </div>
                 <button class="carrito">Agregar</button>
             </div>
+        </section>
+        <section class="productos">
+          <div class="card container1 comprar" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/dsmdexs7f/image/upload/v1683384054/Camisa_roja_gzu9zj.jpg" class="card-img-top" alt="CamisaRoja">
+            <div class="card-body">
+              <p class="card-text"> Camisa leñadora roja $13,500</p>
+            </div>
+            <button class="carrito">Agregar</button>
+          </div>
+          <div class="card container1 comprar" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/dsmdexs7f/image/upload/v1683500485/PARKA_2_1_hgjefo.jpg" class="card-img-top" alt="CamperaVerdeGabardina">
+            <div class="card-body">
+              <p class="card-text">Parka verde $25,999</p>
+            </div>
+            <button class="carrito">Agregar</button>
+          </div>
+          <div class="card container1 comprar" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/dsmdexs7f/image/upload/v1683500484/oh_my_denim__mbjngz.jpg" class="card-img-top" alt="JeansMom">
+            <div class="card-body">
+              <p class="card-text">Jeans BootCut $9,499</p>
+            </div>
+            <button class="carrito">Agregar</button>
+          </div>
+          <div class="card container1 comprar" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/dsmdexs7f/image/upload/v1683409781/pantalon2_qxy3wr.jpg" class="card-img-top" alt="JeansSlimFit">
+            <div class="card-body">
+              <p class="card-text">Jeans Slim Fit $7,499</p>
+            </div>
+            <button class="carrito">Agregar</button>
+          </div>
         </section>
     </main>
     <footer class="footer">
