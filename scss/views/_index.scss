@@ -1,0 +1,143 @@
+/*------Barra de Navegación------*/
+.navbar{
+    background-color: #f8f8f8;
+    .ancho-mx{
+        max-width: 1800px;
+        img{
+            max-width: 120px;
+        }
+        .navbar-brand {
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        .navbar-collapse{
+            flex-direction: row;
+            justify-content: center;
+            min-height: 10vh;
+            .nav-link {
+                &:hover{
+                    @extend .Color-1
+                }
+            }
+        }
+    }
+}
+
+.slide{
+    margin-right: 10px;
+    margin-left: 10px;
+    img{
+        height: 1150px;
+    }
+    .carousel-caption h1{
+    font-family: "TrajanPro";
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.452);
+    backdrop-filter: blur(10px);
+    width: 450px;
+    padding: 10px;
+}
+
+}
+/*Main*/
+.Promocion__descuento{
+    font-family: "Archivo-Bold";
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation-name: promocion;
+    animation-duration: 2.5s;
+    animation-iteration-count: 10;
+}
+
+.Promocion__descuento--p1{
+    font-size: 80px;
+}
+
+.Promocion__descuento--p2{
+    font-size: 40px;
+}
+
+.contenedor4 {
+    font-family: Arial;
+    height: 100px;  
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend .Color-1
+}
+
+.contenedor4 h2{
+    align-content: center;
+}
+
+.contenedor4 svg{
+    color: white;
+}
+
+.Suscripciones {
+    font-family: none;
+    background-color: #edafb870;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    button {
+        background-color: #000;
+        padding: 8px;
+        width: 150px;
+        border-radius: 2px;
+        &:hover{
+            transform: scale(1.05);
+        }
+        a {
+            font-family: Arial;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+}
+
+.logo-ubicacion {
+    width: 50px;
+    height: 35px;
+    color: black;
+    
+}
+
+/*---footer---*/
+
+.footer{
+    background-color: black;
+    min-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    svg{
+        width: 30px;
+        height: 30px;
+        color: white;
+
+    }
+}
+
+@keyframes promocion{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.01);
+        color: rgba(255, 22, 22, 0.733);
+    }
+}

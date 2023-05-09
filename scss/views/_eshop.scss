@@ -1,0 +1,56 @@
+/*eshop*/
+
+.Header-eshop {
+    background-color: #7e8766;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Barrabusqueda input{
+        width: 80vh;
+        padding: 2px;
+        border: solid 1px rgb(110, 110, 110);
+    }
+    .Botonbuscar{
+        padding: 2px;
+        width: 30px;
+    }
+    .Carritodecompra{
+        margin-left: 100px;
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+/*---Main eshop*/
+
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    .card {
+        display: flex;
+        align-items: center
+      }
+    .container1 img{
+        height: 100%;
+    }
+}
+.carrito {
+    width: 80%;
+    background: #7e8766;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  .comprar button:hover{
+    transform: scale(1.03);
+    @extend .Color-1;
+  }
+ 
+

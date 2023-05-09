@@ -1,0 +1,135 @@
+@media (max-width: 1248px) {
+    .card img{
+        padding: 10px;
+    }
+    .slide img{
+        height: 800px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .ubicacion{
+        height: auto;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card {
+            width: auto;
+            img {
+                height: 400px;
+            }
+        }
+    }
+    .slide img{
+        height: 600px;
+    }
+    .Promocion__descuento--p1{
+        font-size: 60px;
+    }
+    
+    .Promocion__descuento--p2{
+        font-size: 30px;
+    }
+    .Header-eshop{
+        .Barrabusqueda input{
+            width: 30vh;
+        }
+        .Carritodecompra {
+            margin-left: 11px;
+        }
+    }
+
+    
+
+}
+@media (max-width: 628px) {
+    .ancho-mx a img{
+        max-width: 100px;
+    }
+    .formulario {
+        width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .Promocion__descuento--p1{
+        font-size: 40px;
+    }
+    
+    .Promocion__descuento--p2{
+        font-size: 20px;
+    }
+    .contenedor1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor1 img{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .ancho-mx a img{
+        max-width: 80px;
+    }
+    .formulario {
+        width: auto;
+    }
+    .responsivecontact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .botonderegistro input{
+        width: 50%;
+    }
+    .main-contacto h1{
+        font-size: 13px;
+    }
+    .footer {
+        font-size: 12px;
+        min-height: 20vh;
+    }
+    .containergrilla{
+        display: block;
+        padding: 5px;
+    }
+    .slide img{
+        height: 250px;
+    }
+    .main-index{
+        min-height: 80vh;
+    }
+    .contenedor2 {
+        display: flex;
+        justify-content: center;
+    }
+    .main-catalogo{
+        min-height: 80vh;
+    }
+    .titulosgrilla {
+        font-size: 14px;
+    }
+    .contenedor2{
+        padding: 50px;
+        align-items: center;
+    }
+    .contenedor2 h2{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .Main-eshop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Header-eshop{
+        .Barrabusqueda input{
+            width: 20vh;
+        }
+    }
+    }
