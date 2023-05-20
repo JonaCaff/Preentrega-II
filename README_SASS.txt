@@ -23,5 +23,6 @@
 5. Cada vez que se quiera seguir compilando en SASS
     a. abrir la consola con ctrl+ñ
     b. npm run watch-css
+    c.git push -u origin main
 
 //FIN

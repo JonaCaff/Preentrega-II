@@ -1,7 +1,7 @@
 /*eshop*/
 
 .Header-eshop {
-    background-color: #7e8766;
+    background-color: ($Verde);
     height: 80px;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 }
 .carrito {
     width: 80%;
-    background: #7e8766;
+    background: ($Verde);
     border: none;
     padding: 12px;
     color: white;

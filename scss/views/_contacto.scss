@@ -13,7 +13,7 @@
 /*Formulario*/
 .formulario {
     width: 600px;
-    background: #f8f8f8;
+    background: $Blanco;
     padding: 30px;
     margin: auto;
     margin-top: 50px;
@@ -30,7 +30,7 @@
   
   .controls {
     width: 100%;
-    background: #f8f8f8;
+    background: $Blanco;
     padding: 10px;
     margin-top: 18px;
     margin-bottom: 18px;
@@ -72,7 +72,7 @@
 
   .botonderegistro input{
     width: 30%;
-    background: #7e8766;
+    background: $Verde;
     border: none;
     padding: 12px;
     color: white;

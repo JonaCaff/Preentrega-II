@@ -3,7 +3,7 @@
 .header-conocenos{
     font-family: "Arial";
     padding: 100PX;
-    background-color: #edafb870;
+    background-color: $Rosa;
 }
 .main-conocenos{
     display: flex;
@@ -28,7 +28,7 @@
     font-family: Arial;
     padding: 100PX;
     width: 100%;
-    background-color: #edafb870;
+    background-color: $Rosa;
     display: flex;
     justify-content: flex-end
 }
@@ -49,7 +49,7 @@
 .ubicacion{
     width: 100%;
     height: auto;
-    background-color: #edafb870;
+    background-color: $Rosa;
     padding: 20px;
     display: flex;
     justify-content: center;
